@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --dark-grey: rgb(43, 43, 43);
+    --light-grey: rgb(75, 75, 75);
+    --text-dark: hsl(0, 0%, 13%);
+    --text-grey: hsl(0, 0%, 29%);
+    --text-light: hsl(0, 0%, 45%);
+}
+.btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.primaryBtn {
+}
+.secondaryBtn {
+    border: solid 1px #ccc;
+}
+body {
+    background-color: rgb(242, 242, 242);
+}
+.activePage {
+    border-bottom: solid 6px rgb(242, 242, 242);
+}
+.activePage > span {
+    transform: translateY(-3px);
+    color: rgb(199, 199, 199);
+}

@@ -1,0 +1,117 @@
+.menuTop {
+    background-color: rgb(25, 102, 102);
+}
+.menuTop > .topSection {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+img[alt~="companyLogo"] {
+    max-height: 70px;
+}
+.menuTop > .topSection > div {
+    width: 33%;
+}
+.menuTop > .topSection > .searchBar {
+    padding: 0px 50px;
+    position: relative;
+}
+.menuTop > .topSection > .searchBar > input {
+    width: 100%;
+    font-size: var(--fs-400);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--dark-grey);
+    color: white;
+    outline: none;
+}
+.menuTop > .topSection > .searchBar > svg {
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 100%;
+    font-size: var(--fs-500);
+}
+
+.menuTop > .topSection > .userActions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: var(--fs-500);
+    padding-right: 90px;
+}
+
+.menuTop > .topSection > .userActions > .userCart {
+    position: relative;
+}
+.menuTop > .topSection > .userActions > .userCart > svg {
+    font-size: xx-large;
+    position: absolute;
+    right: -40px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.bottomSection {
+    width: 100%;
+    height: 50px;
+    background: black;
+    text-align: center;
+    z-index: 11;
+}
+.bottomSection > .menuItems {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-size: var(--fs-500);
+}
+.bottomSection > .menuItems > li {
+    margin: 0px 20px;
+
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+    height: 100%;
+}
+.bottomSection > .menuItems > li > span {
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: 50px;
+}
+.bottomSection > .menuItems > li:hover > .subMenu {
+    opacity: 1;
+    margin-top: 0px;
+    pointer-events: all;
+}
+.bottomSection > .menuItems > li > .subMenu {
+    position: absolute;
+    background: black;
+    padding: 25px;
+    width: 200%;
+    transform: translateX(-15%);
+    border-radius: 0px 0px 20px 20px;
+    opacity: 0;
+    margin-top: -100px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 9;
+}
+.bottomSection > .menuItems > li > .subMenu > ul {
+    list-style: none;
+}
+.bottomSection > .menuItems > li > .subMenu > ul > li {
+    margin-bottom: 10px;
+}
+.bottomSection > .menuItems > li:hover > span {
+    transform: translateY(-2px);
+    color: rgb(199, 199, 199);
+}

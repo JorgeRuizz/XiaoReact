@@ -7,17 +7,24 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
+        <link href="{{ URL::asset('fonts/Bubbleboddy.ttf') }}" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        
+        <style type="text/css">
+            *{
+                font-family: 'Roboto Mono', monospace;
             }
         </style>
     </head>
     <body class="antialiased">
-       <div id="rootApp">
-           
+       <div id="Menu">
+       </div>
+       <div id="HomeContainer">
        </div>
        <script src="{{mix('js/app.js')}}"></script>
+        <script src="https://kit.fontawesome.com/c17113d732.js" crossorigin="anonymous"></script>
+
     </body>
 </html>
